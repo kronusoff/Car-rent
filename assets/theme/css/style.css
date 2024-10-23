@@ -963,3 +963,47 @@ blockquote {
 	top: 0;
 	left: -2400px;
 }
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Окно фиксировано */
+    z-index: 1000; /* На переднем плане */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включить прокрутку, если необходимо */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto; /* 10% сверху и центрирование */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 533.46px; /* Установите ширину, которая вам нужна */
+    height: 484.99px;
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    text-align: center;
+}
+
+.close {
+  text-align: right;
+    color: #aaa;
+    float: right; /* Угол */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-block-title {
+    margin: 0 0 15px;
+    text-align: center; /* Выравнивание заголовка по центру */
+}

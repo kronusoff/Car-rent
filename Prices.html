@@ -9,7 +9,7 @@
   <meta name="description" content="Аренда авто на car4.by предлагает широкий выбор автомобилей для любого случая. Удобный интерфейс и доступные цены делают процесс легким и быстрым.">
   
   
-  <title>Условия</title>
+  <title>Цены</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -29,35 +29,80 @@
   <section data-bs-version="5.1" class="menu menu2 cid-urFd0rfcWg" once="menu" id="menu02-f">
 	
 
-	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-		<div class="container">
-			<div class="navbar-brand">
-				
-				
-			</div>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<div class="hamburger">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav nav-dropdown navbar-nav-top-padding" data-app-modern-menu="true"><li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle display-4" href="" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Язык</a><div class="dropdown-menu" aria-labelledby="dropdown-840"><a class="text-black dropdown-item display-4" href="">Русский</a><a class="text-black dropdown-item display-4" href="">Английский</a></div></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Главная</a></li><li class="nav-item">
-          <a class="nav-link link text-black display-4" href="/Carpark.html">Автопарк</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link link text-black display-4" href="/Prices.html" aria-expanded="false">Цены</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link link text-black display-4" href="/Сonditions.html">Условия</a>
-					</li><li class="nav-item"><a class="nav-link link text-black display-4" href="/Сontacts.html">Контакты</a></li></ul>
-				
-				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-warning display-4" href="">Забронировать сейчас</a></div>
-			</div>
-		</div>
-	</nav>
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+      <div class="container">
+        <div class="navbar-brand">
+          
+          
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav nav-dropdown navbar-nav-top-padding" data-app-modern-menu="true">
+                      <li class="nav-item dropdown">
+                          <a class="nav-link link text-black dropdown-toggle display-4" href="" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Язык</a>
+                          <div class="dropdown-menu" aria-labelledby="dropdown-840">
+                              <a class="text-black dropdown-item display-4" href="" onclick="changeLanguage('ru')">Русский</a>
+                              <a class="text-black dropdown-item display-4" href="" onclick="changeLanguage('en')">Английский</a>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link link text-black text-primary display-4" href="index.html">Главная</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link link text-black display-4" href="/Carpark.html">Автопарк</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link link text-black display-4" href="/Prices.html" aria-expanded="false">Цены</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link link text-black display-4" href="/Сonditions.html">Условия</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link link text-black display-4" href="/Сontacts.html">Контакты</a>
+                      </li>
+                  </ul>
+                  
+                  <div class="navbar-buttons mbr-section-btn">
+                      <a class="btn btn-warning display-4" href="#" id="bookNowBtn">Забронировать сейчас</a>
+                  </div>
+                  
+                  <!-- Модальное окно -->
+                  <div id="bookingModal" class="modal">
+                      <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <h2 class="modal-block-title">Оставьте заявку и мы Вам перезвоним</h2>
+                          <div class="modal-block-form">
+                              <div class="wpcf7 js" id="wpcf7-f314-o1" lang="ru-RU" dir="ltr">
+                                  <form action="/#wpcf7-f314-o1" method="post" class="wpcf7-form init" aria-label="Контактная форма" novalidate="novalidate">
+                                      <p>
+                                          <span class="wpcf7-form-control-wrap" data-name="user-name">
+                                              <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" aria-required="true" placeholder="Ваше Имя" type="text" name="user-name" required>
+                                          </span>
+                                      </p>
+                                      <p>
+                                          <span class="wpcf7-form-control-wrap" data-name="user-phone">
+                                              <input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" aria-required="true" placeholder="Ваш номер телефона" type="text" name="user-phone" required>
+                                          </span>
+                                      </p>
+                                      <p>
+                                          <input class="wpcf7-form-control wpcf7-submit btn orange" type="submit" value="Отправить">
+                                      </p>
+                                      <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>                
+              </div>
+      </div>
+    </nav>
 </section>
 
 <section data-bs-version="5.1" class="contacts03 cid-urFd0wzwSW" id="contacts03-o">
@@ -99,7 +144,7 @@
             </div>
         </div>
     </div>
-  
-  
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script> <script type="assets/language/changeLanguage.js" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>></script>  <script src="assets/parallax/jarallax.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/mbr-switch-arrow/mbr-switch-arrow.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/formoid/formoid.min.js"></script><script src="/assets/scrollIntoView/scrollIntoView .js"></script><script src="/assets/bookingModal/bookingModal.js"></script>
+
 </body>
 </html>
